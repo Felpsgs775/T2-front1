@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("imagens/fundo\ do\ jardim\ web\ -\ Dark\ Fantasy.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    font-family: "Cormorant Garamond", serif;
+    
+
+    display: flex;
+    justify-content: center;
+
+    padding: 40px 0;
+}
+
+
+
+#container{
+    width: 85%;
+    max-width: 1200px;
+
+    background-color: rgba(10, 10, 10, 0.92);
+
+    border: 1px solid #8f7345;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+    0 0 30px rgba(0,0,0,0.9),
+    0 0 15px rgba(176,141,87,0.2);
+}
+
+
+
+#jar-header{
+    text-align: center;
+
+    padding: 70px 20px;
+
+    background: linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.85)
+    );
+}
+
+#jar-header h1{
+    font-family: "Cinzel", serif;
+    font-size: 4rem;
+    color: #C2A878;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+
+    text-shadow: 0 0 10px rgba(194,168,120,0.3);
+}
+
+#jar-header h2{
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #d4d0c7;
+}
+
+
+#jar-supporting{
+    width: 72%;
+    float: left;
+
+    padding: 40px;
+}
+
+.sidebar{
+    width: 28%;
+    float: right;
+
+    background-color: rgba(20,20,20,0.95);
+
+    border-left: 1px solid #5e4b2f;
+
+    min-height: 100%;
+}
+
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements{
+    margin-bottom: 45px;
+
+    padding: 25px;
+
+    background-color: rgba(255,255,255,0.03);
+
+    border: 1px solid rgba(194,168,120,0.15);
+
+    border-radius: 12px;
+
+    transition: 0.3s ease;
+}
+
+.preamble:hover,
+.explanation:hover,
+.participation:hover,
+.benefits:hover,
+.requirements:hover{
+    transform: translateY(-3px);
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+
+h3{
+    font-family: "Cinzel", serif;
+
+    color: #C2A878;
+
+    margin-bottom: 18px;
+
+    font-size: 1.8rem;
+
+    border-bottom: 1px solid rgba(194,168,120,0.3);
+
+    padding-bottom: 10px;
+}
+
+p{
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+
+    font-size: 1.15rem;
+
+    color: #d9d4c9;
+}
+
+
+
+a{
+    color: #C2A878;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+a:hover{
+    color: #f0d7a1;
+
+    text-shadow: 0 0 8px rgba(240,215,161,0.5);
+}
+
+
+.sidebar .wrapper{
+    padding: 30px 25px;
+}
+
+.sidebar h3{
+    font-size: 1.5rem;
+}
+
+.sidebar ul{
+    list-style: none;
+}
+
+.sidebar li{
+    margin-bottom: 18px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.summary{
+    padding: 30px 50px;
+
+    text-align: center;
+
+    background-color: rgba(0,0,0,0.65);
+
+    border-top: 1px solid rgba(194,168,120,0.2);
+
+    border-bottom: 1px solid rgba(194,168,120,0.2);
+}
+
+.footer{
+    text-align: center;
+
+    padding: 30px;
+
+    border-top: 1px solid rgba(194,168,120,0.2);
+
+    margin-top: 40px;
+}
+
+.footer a{
+    margin: 0 10px;
+
+    font-family: "Cinzel", serif;
+}
+
+
+
+#extraDiv1,
+#extraDiv2,
+#extraDiv3,
+#extraDiv4,
+#extraDiv5,
+#extraDiv6{
+    width: 250px;
+    height: 180px;
+
+    position: relative;
+
+    border: 2px solid #8f7345;
+
+    border-radius: 12px;
+
+    background-size: cover;
+    background-position: center;
+
+    box-shadow:
+    0 0 15px rgba(0,0,0,0.8),
+    0 0 10px rgba(194,168,120,0.2);
+
+    transition: 0.4s ease;
+
+    overflow: hidden;
+}
+
+#extraDiv1:hover,
+#extraDiv2:hover,
+#extraDiv3:hover,
+#extraDiv4:hover,
+#extraDiv5:hover,
+#extraDiv6:hover{
+    transform: scale(1.04);
+
+    z-index: 999;
+}
+#extraDiv1,
+#extraDiv2,
+#extraDiv3,
+#extraDiv4,
+#extraDiv5,
+#extraDiv6{
+    display: inline-block;
+
+    margin: 15px;
+
+    position: static;
+
+    vertical-align: top;
+}
+
+#extraDiv1{
+    background-image: url("imagens/img1.jpg");
+}
+
+#extraDiv2{
+    background-image: url("imagens/img2.jpg");
+}
+
+#extraDiv3{
+    background-image: url("imagens/img3.jpg");
+}
+
+#extraDiv4{
+    background-image: url("imagens/img4.jpg");
+}
+
+#extraDiv5{
+    background-image: url("imagens/img5.jpg");
+}
+
+#extraDiv6{
+    background-image: url("imagens/img6.jpg");
+}
+
+@media(max-width: 1100px){
+
+    #jar-supporting,
+    .sidebar{
+        width: 100%;
+
+        float: none;
+    }
+
+    .sidebar{
+        border-left: none;
+        border-top: 1px solid #5e4b2f;
+    }
+
+    #extraDiv1,
+    #extraDiv2,
+    #extraDiv3,
+    #extraDiv4,
+    #extraDiv5,
+    #extraDiv6{
+        display: none;
+    }
+
+    #jar-header h1{
+        font-size: 2.8rem;
+    }
+}
