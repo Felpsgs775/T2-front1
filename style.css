@@ -239,29 +239,48 @@ a:hover{
     overflow: hidden;
 }
 
-#extraDiv1:hover,
-#extraDiv2:hover,
-#extraDiv3:hover,
-#extraDiv4:hover,
-#extraDiv5:hover,
-#extraDiv6:hover{
-    transform: scale(1.04);
+#container::after{
+    content: "";
 
-    z-index: 999;
+    display: block;
+
+    clear: both;
 }
+
 #extraDiv1,
 #extraDiv2,
 #extraDiv3,
 #extraDiv4,
 #extraDiv5,
 #extraDiv6{
+    width: 300px;
+    height: 200px;
+
     display: inline-block;
 
     margin: 15px;
 
-    position: static;
+    border-radius: 14px;
 
-    vertical-align: top;
+    border: 2px solid #8f7345;
+
+    background-size: cover;
+    background-position: center;
+
+    box-shadow:
+    0 0 15px rgba(0,0,0,0.7),
+    0 0 10px rgba(194,168,120,0.15);
+
+    transition: 0.4s ease;
+}
+
+#extraDiv1:hover,
+#extraDiv2:hover,
+#extraDiv3:hover,
+#extraDiv4:hover,
+#extraDiv5:hover,
+#extraDiv6:hover{
+    transform: scale(1.03);
 }
 
 #extraDiv1{
@@ -286,6 +305,23 @@ a:hover{
 
 #extraDiv6{
     background-image: url("imagens/img6.jpg");
+}
+
+#extraDiv1,
+#extraDiv2,
+#extraDiv3,
+#extraDiv4,
+#extraDiv5,
+#extraDiv6{
+    position: relative;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+#extraDiv1{
+    margin-top: 60px;
 }
 
 @media(max-width: 1100px){
