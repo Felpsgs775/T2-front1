@@ -4,6 +4,11 @@
     src: url(fontes/CormorantUnicase-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Playfair Display';
+    src: url(fontes/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
 
 
 *{
