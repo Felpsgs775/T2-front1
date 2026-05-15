@@ -215,8 +215,113 @@ a:hover{
 
     font-family: "Cinzel", serif;
 }
-div#extraDiv1 > span
-{
+#extraDiv1,
+#extraDiv2,
+#extraDiv3,
+#extraDiv4,
+#extraDiv5{
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(194,168,120,0.25);
+
+    background-size: cover;
+    background-position: center;
+
+    box-shadow:
+    0 0 20px rgba(0,0,0,0.7),
+    0 0 12px rgba(194,168,120,0.12);
+
+    transition: 0.35s ease;
+
+    position: absolute;
+}
+
+#extraDiv1:hover,
+#extraDiv2:hover,
+#extraDiv3:hover,
+#extraDiv4:hover,
+#extraDiv5:hover{
+    scale: 1.02;
+
+    box-shadow:
+    0 0 30px rgba(0,0,0,0.9),
+    0 0 18px rgba(194,168,120,0.35);
+}
+
+
+
+/* AQUI ESTÁ O QUE FALTAVA */
+
+#container{
+    margin-bottom: 850px;
+}
+
+
+
+/* GALERIA */
+
+#extraDiv1{
+    width: 420px;
+    height: 240px;
+
     background-image: url(imagens/div1.webp);
 
+    top: 1180px;
+    left: 50%;
+
+    transform: translateX(-520px);
+}
+
+#extraDiv2{
+    width: 260px;
+    height: 420px;
+
+    background-image: url(imagens/div2.jpg);
+
+    top: 1180px;
+    left: 50%;
+
+    transform: translateX(-70px);
+}
+
+#extraDiv3{
+    width: 260px;
+    height: 190px;
+
+    background-image: url(imagens/div3.jpg);
+
+    top: 1450px;
+    left: 50%;
+
+    transform: translateX(-520px);
+}
+
+#extraDiv4{
+    width: 390px;
+    height: 190px;
+
+    background-image: url(imagens/div4.webp);
+
+    top: 1450px;
+    left: 50%;
+
+    transform: translateX(-240px);
+}
+
+#extraDiv5{
+    width: 260px;
+    height: 420px;
+
+    background-image: url(imagens/div5.jpg);
+
+    top: 1180px;
+    left: 50%;
+
+    transform: translateX(220px);
+}
+
+#extraDiv6{
+    display: none;
 }
